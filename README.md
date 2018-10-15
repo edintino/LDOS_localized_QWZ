@@ -2,7 +2,11 @@
 
 ## Introduction
 
-This program was a part of my summer internship (2018) at the Hungarian Academy of Sciences funded by the (Hungarian) National Research, Development and Innovation Office. The code uses the [Kernel Polynomial Method] (KPM) on the toy model introduced by Qi, Wu and Zhang (QWZ model), equation (6.6) in [this book] or the original paper can be found [here]. We investigated the Anderson localization on the lattice with a random onsite disturbance for each lattice site drawn from a box distribution. A statistical ensemble is required of the Local Density of States (LDOS) to deduce localization, e.g. a possible [numerical approach]. 
+This program was a part of my summer internship (2018) at the Hungarian Academy of Sciences funded by the (Hungarian) National Research, Development and Innovation Office. The code uses the [Kernel Polynomial Method] (KPM) on the toy model introduced by Qi, Wu and Zhang (QWZ model), equation (6.6) in [this book] or the original paper can be found [here]. We investigated the Anderson localization on the lattice with a random onsite disturbance for each lattice site drawn from a box distribution. A statistical ensemble is required of the Local Density of States (LDOS) to deduce localization, e.g. a possible [numerical approach].
+
+If you run the program many times you might want to compress the data into a single pickle file, that is what the compress_data script does.
+
+I uploaded an example dataset, you can view the results by running the process_data script, it shows the expected features. Some intermediate state in the first few plots, which delocalizes and than localizes at the end for the plotted energy spectrum.
 
 ## General usage
 
