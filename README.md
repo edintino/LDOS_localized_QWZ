@@ -10,14 +10,14 @@ I uploaded an example dataset, you can view the results by running the process_d
 
 ## General usage
 
-You should run the program from the command line. The onsite potential for this model should be either u=1.0 or u=3.0, as these are the two qualitatively different cases, for the topologically non-trivial and trivial cases respectively. I calculated some ideal shrinking factors for both cases for the disorder weight in the range $[0.0,13.0]$ for the program to run. There are a few input parameters, which are:
+You should run the program from the command line. The onsite potential for this model should be either u=1.0 or u=3.0, as these are the two qualitatively different cases, for the topologically non-trivial and trivial cases respectively. I calculated some ideal shrinking factors for both cases for the disorder weight in the range \[0.0,13.0\] for the program to run. There are a few input parameters, which are:
 
-+ -s, sets random seed,
-+ -L, linear lattice size, the program creates an L by L square shaped two-dimensional lattice,
-+ -u sets the onsite potential,
-+ -d sets the disroder strength,
-+ -m sets the number of moments to be calculated with the KPM.
++ `-s`, sets random seed,
++ `-L`, linear lattice size, the program creates an L by L square shaped two-dimensional lattice,
++ `-u` sets the onsite potential,
++ `-d` sets the disroder strength,
++ `-m` sets the number of moments to be calculated with the KPM.
 
-So for example you could run the code with: python3 qwz_kpm_ldos.py -s 12345 -L 200 -u 3.0 -d 3.0 > data_rseed12345.
+So for example you could run the code with: `python3 qwz_kpm_ldos.py -s 12345 -L 200 -u 3.0 -d 3.0 > data_rseed12345`.
 
 Note: due to the (over) shrinking at the edges we get LDOS values out of our actual energy range.
